@@ -1,8 +1,5 @@
 package com.example.web.resource;
 
-import jdk.nashorn.internal.objects.annotations.Getter;
-import org.springframework.stereotype.Component;
-
 import javax.inject.Named;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -16,6 +13,7 @@ import javax.ws.rs.core.Response;
 public class ApplicationResource {
 
     private static final String Phone_Number = "phoneNumber";
+
     @GET
     @Path("/{phoneNumber}/customer_details")
     @Produces(MediaType.APPLICATION_JSON)

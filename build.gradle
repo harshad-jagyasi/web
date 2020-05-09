@@ -25,6 +25,9 @@ jar{
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-jersey'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-activemq'
+	implementation 'org.springframework.boot:spring-boot-starter-actuator'
+	implementation 'org.apache.activemq:activemq-broker'
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
 	}
